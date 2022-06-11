@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="698CD99C-2BBC-1A06-1957-DE3F6A58C722" name="T_REG_ATV">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>979933C3-50BA-9689-8DFE-F5AA1AADBC63</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_reg_atv" id="C0D0772B-0CC5-060B-0FFC-D6455667F7A9">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>AE79C794-79FD-037C-698E-60EC88D3DBB0</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_atv" id="29A86F0E-CA47-4B3F-D604-1640E70D3BDE">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>8417D28F-7EA3-BD61-A845-BD69911FAD38</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="calor_perdidas" id="02167303-CD84-88D2-0B88-0C9ADFF73E42">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>CB812CCD-5113-93DB-78F0-163EBA69552E</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bpm_max" id="443768C7-8BEE-F8CE-8DAC-BF09B6E46AE9">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>FD86E700-03E3-E5BD-65B4-CAE2D8B01FAF</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bpm_min" id="EF9D6CE7-49BF-D057-D28C-84B5667A11C3">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>D826042A-965F-3496-A0E5-D3DEFF21F293</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_USUARIO_id_usuario" id="709C3DE7-6956-532D-A3C9-2BDA62752699">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>08B42715-73BE-3BB8-E29F-7B5F8AEDF4C0</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C6504FF-41E2-8737-FF9B-84C77CA1A180" referredColumn="D0E7729B-EFD6-2964-38E3-96287729F2FA"/>
+</associations>
+</Column>
+<Column name="T_NM_ATV_id_atv" id="F6110F7F-DDAC-837E-7D38-A57EE0C3AD48">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>49DE2449-6166-2A84-B535-735B6B3FA2B9</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D188978-D6B0-4AE2-33DC-1DAD256DD4BD" referredColumn="2F3A7C5C-AAF8-3825-2913-07577E9AF225"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B83450E-8392-CAFC-E405-A1DB2FAB3CB9" name="T_REG_ATV_PK">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>2D0A3ACD-5384-0663-2D74-8EE84865082B</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0D0772B-0CC5-060B-0FFC-D6455667F7A9"/>
+<colUsage columnID="709C3DE7-6956-532D-A3C9-2BDA62752699"/>
+<colUsage columnID="F6110F7F-DDAC-837E-7D38-A57EE0C3AD48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9659481D-03DB-66C1-737F-5EC40C73A6A7" name="T_REG_ATV_T_USUARIO_FK">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>01AC0F15-AE00-D3E3-E623-8044AC518AB2</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="709C3DE7-6956-532D-A3C9-2BDA62752699"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D815E847-CB00-9085-A25E-B7A5251C5BE5" name="T_REG_ATV_T_NM_ATV_FK">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>EE4FB652-43DE-0AAF-915B-67136C1CC0AC</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6110F7F-DDAC-837E-7D38-A57EE0C3AD48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

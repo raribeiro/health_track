@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC128C58-94FA-C60D-838D-7F03AD2ADC54" name="T_PRESS_SANG">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>67ECABAE-D572-96BE-43D4-044379E97FD4</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_press" id="EB280DEF-DB85-5BFE-74B0-EE75A529F6CC">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>95348B9F-1B99-5625-6813-BCE44D52303D</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_reg_press" id="9AD8F486-5154-3E6C-CB42-4AA9E691CAEB">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>8CDDA96D-4F27-4BF0-1450-AD05DC1D392F</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_press" id="C82565BD-DB45-1418-0B7B-3D868BE64170">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>D1C32C93-E9BB-2F5E-2A28-62996054EEE2</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_USUARIO_id_usuario" id="693AB623-5CD2-0249-790A-EC409FD77DD6">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>ADAEFBA4-AC3C-E183-2E10-5BA1286F1D49</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7766C3C-5A2E-C1FE-F509-DABD6D9DA9DA" referredColumn="D0E7729B-EFD6-2964-38E3-96287729F2FA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C069428-2526-D4D0-02FA-5AF844E8ABBA" name="T_PRESS_SANG_PK">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>63179B9A-9424-5436-BB1E-D0AF829B4571</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB280DEF-DB85-5BFE-74B0-EE75A529F6CC"/>
+<colUsage columnID="693AB623-5CD2-0249-790A-EC409FD77DD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE0E29F5-9231-A617-C0B5-03792E6F25FF" name="T_PRESS_SANG_T_USUARIO_FK">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:28:05 UTC</createdTime>
+<generatorID>DA4602CC-CB64-E07D-1F44-82573D21FC42</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="693AB623-5CD2-0249-790A-EC409FD77DD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

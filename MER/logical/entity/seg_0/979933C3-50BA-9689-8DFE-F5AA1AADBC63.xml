@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D36F6C74-5CF2-1577-1859-1246EC081B83" name="T_USUARIO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="979933C3-50BA-9689-8DFE-F5AA1AADBC63" name="T_REG_ATV">
 <createdBy>rribeiro</createdBy>
-<createdTime>2022-06-11 00:30:27 UTC</createdTime>
+<createdTime>2022-06-11 00:43:15 UTC</createdTime>
 <ownerDesignName>MER</ownerDesignName>
 <engineerTo>
 <item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_usuario" id="39F1F06C-2382-BB2B-272D-988C1EE08A86">
+<Attribute name="id_reg_atv" id="AE79C794-79FD-037C-698E-60EC88D3DBB0">
 <createdBy>rribeiro</createdBy>
-<createdTime>2022-06-11 00:32:27 UTC</createdTime>
+<createdTime>2022-06-11 00:43:15 UTC</createdTime>
 <ownerDesignName>MER</ownerDesignName>
 <engineerTo>
 <item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
@@ -27,60 +27,21 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="prim_nm_usuario" id="349986B8-B142-3F35-856C-65B3E6743E02">
+<Attribute name="dt_atv" id="8417D28F-7EA3-BD61-A845-BD69911FAD38">
 <createdBy>rribeiro</createdBy>
-<createdTime>2022-06-11 00:33:48 UTC</createdTime>
+<createdTime>2022-06-11 00:43:15 UTC</createdTime>
 <ownerDesignName>MER</ownerDesignName>
 <engineerTo>
 <item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT023</logicalDatatype>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="seg_nm_usuario" id="E8D175DF-2F41-C54E-7467-643C30D4C95A">
+<Attribute name="calor_perdidas" id="CB812CCD-5113-93DB-78F0-163EBA69552E">
 <createdBy>rribeiro</createdBy>
-<createdTime>2022-06-11 00:35:10 UTC</createdTime>
-<ownerDesignName>MER</ownerDesignName>
-<engineerTo>
-<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="email_usuario" id="DF01F61D-D91A-83AC-C573-DEC0E7CC25E1">
-<createdBy>rribeiro</createdBy>
-<createdTime>2022-06-11 00:35:24 UTC</createdTime>
-<ownerDesignName>MER</ownerDesignName>
-<engineerTo>
-<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="sen_usuario" id="69B2637D-24DF-8308-9CE8-3F1C5D924BB5">
-<createdBy>rribeiro</createdBy>
-<createdTime>2022-06-11 00:35:54 UTC</createdTime>
-<ownerDesignName>MER</ownerDesignName>
-<engineerTo>
-<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="meta_peso_usuario" id="FD6F08DB-5182-645B-7879-2F56351B67EB">
-<createdBy>rribeiro</createdBy>
-<createdTime>2022-06-11 01:24:52 UTC</createdTime>
+<createdTime>2022-06-11 00:43:15 UTC</createdTime>
 <ownerDesignName>MER</ownerDesignName>
 <engineerTo>
 <item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
@@ -92,11 +53,65 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,3,2</ownDataTypeParameters>
 </Attribute>
+<Attribute name="bpm_max" id="FD86E700-03E3-E5BD-65B4-CAE2D8B01FAF">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 00:50:03 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bpm_min" id="D826042A-965F-3496-A0E5-D3DEFF21F293">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 00:50:29 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="08B42715-73BE-3BB8-E29F-7B5F8AEDF4C0">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:08:32 UTC</createdTime>
+<generatorID>01AC0F15-AE00-D3E3-E623-8044AC518AB2</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
+</engineerTo>
+<referedAttribute>39F1F06C-2382-BB2B-272D-988C1EE08A86</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_atv" id="49DE2449-6166-2A84-B535-735B6B3FA2B9">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:09:15 UTC</createdTime>
+<generatorID>EE4FB652-43DE-0AAF-915B-67136C1CC0AC</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
+</engineerTo>
+<referedAttribute>D3D03E53-2B46-FBFD-172E-E82DDCE45311</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="1928B26A-86DD-0569-2A75-22313B8B1429" name="T_USUARIO PK">
+<identifier id="2D0A3ACD-5384-0663-2D74-8EE84865082B" name="T_PESO PK">
 <createdBy>rribeiro</createdBy>
-<createdTime>2022-06-11 00:32:54 UTC</createdTime>
+<createdTime>2022-06-11 00:43:15 UTC</createdTime>
 <ownerDesignName>MER</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
@@ -104,7 +119,9 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>39F1F06C-2382-BB2B-272D-988C1EE08A86</attributeRef>
+<attributeRef>AE79C794-79FD-037C-698E-60EC88D3DBB0</attributeRef>
+<attributeRef>08B42715-73BE-3BB8-E29F-7B5F8AEDF4C0</attributeRef>
+<attributeRef>49DE2449-6166-2A84-B535-735B6B3FA2B9</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

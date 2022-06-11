@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4646498A-1C7E-26B2-554A-BDE3C78BE054" name="T_REG_PESO">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 00:38:22 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_peso" id="0D3791AA-D4BD-13ED-E025-27DDB2C6FF32">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 00:38:38 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_reg" id="D3F3CF18-04B1-FB78-50DE-5D9A8827B386">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 00:39:09 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_atual" id="16CA7E4F-2CFD-C906-2D4E-D21417819A10">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 00:39:33 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="17396381-7E27-1702-EEFB-9334609F74F1">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 01:07:35 UTC</createdTime>
+<generatorID>D8ACD441-74B5-09BF-AD9C-552656D9D1A7</generatorID>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
+</engineerTo>
+<referedAttribute>39F1F06C-2382-BB2B-272D-988C1EE08A86</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5F2A75BD-CB49-1DD8-384F-F5EE9C940EE3" name="T_PESO PK">
+<createdBy>rribeiro</createdBy>
+<createdTime>2022-06-11 00:38:43 UTC</createdTime>
+<ownerDesignName>MER</ownerDesignName>
+<engineerTo>
+<item key="9950B7DF-96E7-2FA0-D597-CA6C64ECDF04" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D3791AA-D4BD-13ED-E025-27DDB2C6FF32</attributeRef>
+<attributeRef>17396381-7E27-1702-EEFB-9334609F74F1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
