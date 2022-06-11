@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo peso - HealthTrack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="assets/custom_style.css" type="text/css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Health Track</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Minha conta</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+                <a class="btn btn-outline-light">Sair <i data-feather="log-out"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row justify-content-md-center form-login">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h3>
+                    <i data-feather="info"></i> Seu peso atual atual: 82kg
+                </h3>
+                <hr>
+                <form accept="">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Novo valor</label>
+                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="valor">
+                        <div id="emailHelp" class="form-text">Peso informado pelo médico ou analisado na balança.</div>
+                    </div>
+                    <hr>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-primary">Salvar informação <i data-feather="save"></i></button>
+                        <a href="" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+      </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script>
+    feather.replace()
+</script>
+</html>
