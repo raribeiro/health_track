@@ -13,3 +13,11 @@ div.form-edit-info {
 a.btn-deleta-conta{
     margin-left: 10px;
 }
+
+div.canvas {
+    padding: 50px 20px;
+}
+
+hr.spance-chart {
+    margin: 40px 0;
+}
