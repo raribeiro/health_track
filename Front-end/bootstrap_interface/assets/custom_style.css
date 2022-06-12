@@ -2,6 +2,10 @@ a.btn-nova-conta {
     margin-left: 10px;
 }
 
-.form-login {
+div.form-login {
     padding-top: 100px;
+}
+
+div.form-edit-info {
+    padding-top: 50px;
 }
