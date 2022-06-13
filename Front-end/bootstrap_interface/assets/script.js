@@ -35,7 +35,7 @@ const labelsPeso = [
             title: {
                 display: true,
                 text: "Oscilação nos últimos 12 meses",
-                position: "bottom"
+                position: "top"
             },
             legend:{
                 display: false
@@ -82,7 +82,7 @@ const labelsPeso = [
   const dataAtv = {
     labels: labelsAtv,
     datasets: [{
-      label: 'peso',
+      label: 'atividades',
       backgroundColor: 'rgb(255, 99, 132)',
       borderColor: 'rgb(255, 99, 132)',
       data: [0, 10, 5],
@@ -97,7 +97,7 @@ const labelsPeso = [
             title: {
                 display: true,
                 text: "Oscilação nos últimos 12 meses",
-                position: "bottom"
+                position: "top"
             },
             legend:{
                 display: false
@@ -109,4 +109,47 @@ const labelsPeso = [
   const chartAtv = new Chart(
     document.getElementById('ativiDades'),
     configAtv
+  );
+
+  /* Gráfico de horas de sono */
+
+  const labelsHs = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+
+  const dataHs = {
+    labels: labelsHs,
+    datasets: [{
+      label: 'horas',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 2, 5],
+    }]
+  };
+
+  const configHs = {
+    type: 'line',
+    data: dataHs,
+    options: {
+        plugins: {
+            title: {
+                display: true,
+                text: "Oscilação nos últimos 12 meses",
+                position: "top"
+            },
+            legend:{
+                display: false
+            }
+        }
+    }
+  };
+
+  const chartHs = new Chart(
+    document.getElementById('horaSono'),
+    configHs
   );
