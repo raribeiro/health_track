@@ -153,3 +153,43 @@ const labelsPeso = [
     document.getElementById('horaSono'),
     configHs
   );
+
+  /* Gráfico de pressão */
+
+  const labelsPs = [
+    '01',
+    '02',
+    '03'
+  ];
+
+  const dataPs = {
+    labels: labelsPs,
+    datasets: [{
+      label: 'pressão média',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [12.8, 13.6, 18.8],
+    }]
+  };
+
+  const configPs = {
+    type: 'line',
+    data: dataPs,
+    options: {
+        plugins: {
+            title: {
+                display: true,
+                text: "Oscilação nos últimos 12 meses",
+                position: "top"
+            },
+            legend:{
+                display: false
+            }
+        }
+    }
+  };
+
+  const chartPs = new Chart(
+    document.getElementById('PsChart'),
+    configPs
+  );
