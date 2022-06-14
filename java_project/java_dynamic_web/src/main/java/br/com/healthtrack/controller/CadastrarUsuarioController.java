@@ -1,11 +1,17 @@
 package br.com.healthtrack.controller;
 
 import java.io.IOException;
+import java.sql.SQLException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+
+import br.com.healthtrack.connectors.ConnectionManager;
+
 
 /**
  * Servlet implementation class CadastrarUsuarioController
@@ -26,6 +32,7 @@ public class CadastrarUsuarioController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+		System.out.println(1111);
 	}
 
 	/**
@@ -33,7 +40,18 @@ public class CadastrarUsuarioController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		doGet(request, response);
+		//doGet(request, response);
+		
+		ConnectionManager conexao = new ConnectionManager();
+		
+		conexao.connect();
+		
+		try {
+			conexao.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
