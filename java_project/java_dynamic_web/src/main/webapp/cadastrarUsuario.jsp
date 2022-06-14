@@ -24,6 +24,14 @@
                     Crie uma nova conta <i data-feather="user-plus"></i>
                 </h3>
                 <form action="CadastrarUsuarioController" method="post">
+                	<div class="mb-3">
+                        <label for="nm" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nm" name="nm">
+                    </div>
+                    <div class="mb-3">
+                        <label for="snm" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="email" name="snm">
+                    </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Informe seu e-mail</label>
                         <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
@@ -38,8 +46,8 @@
                         <input type="password" class="form-control" id="pass_conf" name="pass_conf">
                     </div>
                     <div class="col-auto">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                        <a href="#" class="btn btn-link">Cadastrar nova conta</a>
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <a href="#" class="btn btn-link">Acesse sua conta</a>
                     </div>
                     
                 </form>

@@ -1,7 +1,6 @@
 package br.com.healthtrack.controller;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,8 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-import br.com.healthtrack.connectors.ConnectionManager;
 
 
 /**
@@ -40,18 +37,18 @@ public class CadastrarUsuarioController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		//doGet(request, response);
 		
-		ConnectionManager conexao = new ConnectionManager();
 		
-		conexao.connect();
+		UsuarioController usuario = new UsuarioController();
 		
-		try {
-			conexao.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		usuario.setPrim_nm_usuario(request.getParameter("nm"));
+		usuario.setSeg_nm_usuario(request.getParameter("snm"));
+		usuario.setEmail_usuario(request.getParameter("email"));
+		usuario.setSenha_usuario(request.getParameter("nm"));
+		
+		usuario.cadastraUsuario();
+		
+		
 	}
 
 }
