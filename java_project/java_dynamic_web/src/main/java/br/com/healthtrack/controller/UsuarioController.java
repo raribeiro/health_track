@@ -1,5 +1,7 @@
 package br.com.healthtrack.controller;
 
+import java.sql.SQLException;
+
 import br.com.healthtrack.model.UsarioModel;
 
 public class UsuarioController {
@@ -8,14 +10,14 @@ public class UsuarioController {
 	private String seg_nm_usuario;
 	private String email_usuario;
 	private String senha_usuario;
-	private String meta_peso_usuario;
+	private double meta_peso_usuario;
 	
 	
-	public void cadastraUsuario() {
+	public void cadastraUsuario() throws SQLException {
 		
 		UsarioModel usuario = new UsarioModel();
 		
-		usuario.cadastraUsuario(prim_nm_usuario, meta_peso_usuario, email_usuario, senha_usuario);
+		usuario.cadastraUsuario(prim_nm_usuario, seg_nm_usuario, email_usuario, senha_usuario, meta_peso_usuario);
 		
 		
 	}
@@ -53,12 +55,12 @@ public class UsuarioController {
 		this.senha_usuario = senha_usuario;
 	}
 	
-	public String getMeta_peso_usuario() {
+	public double getMeta_peso_usuario() {
 		return meta_peso_usuario;
 	}
 	
-	public void setMeta_peso_usuario(String meta_peso_usuario) {
-		this.meta_peso_usuario = meta_peso_usuario;
+	public void setMeta_peso_usuario(double d) {
+		this.meta_peso_usuario = d;
 	}
 
 }

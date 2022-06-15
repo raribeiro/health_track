@@ -30,7 +30,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="snm" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control" id="email" name="snm">
+                        <input type="text" class="form-control" id="snm" name="snm">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Informe seu e-mail</label>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-auto">
                         <button type="submit" class="btn btn-primary">Cadastrar</button>
-                        <a href="#" class="btn btn-link">Acesse sua conta</a>
+                        <a href="conectaUsuario.jsp" class="btn btn-link">Acesse sua conta</a>
                     </div>
                     
                 </form>

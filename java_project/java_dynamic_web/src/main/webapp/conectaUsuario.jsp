@@ -35,7 +35,7 @@
                     </div>
                     <div class="col-auto">
                         <button type="submit" class="btn btn-primary">Acessar</button>
-                        <a href="#" class="btn btn-link">Criar nova conta</a>
+                        <a href="cadastrarUsuario.jsp" class="btn btn-link">Criar nova conta</a>
                     </div>
                     
                 </form>
